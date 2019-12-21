@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'Baloo Bhai';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Baloo Bhai Regular'), local('BalooBhai-Regular'), url(https://fonts.gstatic.com/s/baloobhai/v5/ZgNWjP5GM7bCUdmXgWyVvGLOMg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Baloo';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local('Baloo Regular'), local('Baloo-Regular'), url(https://fonts.gstatic.com/s/baloo/v5/6xKhdSpJJ92I9MWPCm4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Sulphur Point';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Sulphur Point Regular'), local('SulphurPoint-Regular'), url(https://fonts.gstatic.com/s/sulphurpoint/v1/RLp5K5vv8KaycDcazWFPBj2adf4Yug.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+body{
+    background-color: rgb(255, 255, 230);
+}
+
+
+/* Header rules */
+header{
+    display: flex;
+    background-color: lightgrey;
+    border-bottom: 5px solid black;
+    width: 100%;
+}
+
+header p {
+    margin: 10px;
+}
+
+.right-align{
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.button{
+    cursor: pointer;
+    padding: 5px; 
+    
+}
+
+.button:hover {
+    background-color: gray;
+    border-radius: 10%;
+    text-decoration-line: underline;
+    color: white;
+
+}
+
+.dropdown{
+    position: relative; 
+}
+
+.dropdownContent{
+    display:none;
+    color: white;
+    position:absolute;
+    background-color:gray;
+    padding: 15px 5px;
+    border: 1px solid gray;
+    border-radius: 15%;
+    z-index: 1; 
+    top: 30px;
+}
+
+.show{
+    display:block;
+    z-index: 1;
+}
+
+.dropdownContent a{
+    color: black;
+    
+    display: block;
+    padding: 10px 5px;
+}
+
+
+/* body rules */
+.main, .container{
+    display: flex;
+}
+
+h1{
+    font-family:'Baloo';
+    font-size:40px;
+}
+
+h3, h2{
+    font-family:'Baloo Bhai';
+}
+
+h1, h2, h3 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+p, ul, ol{
+    font-family:'Sulphur Point';
+    font-size: 18px;
+}
+
+
+
+.image{
+    margin: 0, auto;
+    height:auto;
+    width: 50%;
+    text-align: center;
+    
+    }
+
+.image img {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;  
+    
+}
+
+.image p{
+  background-color: white;
+  width: 30%;
+  margin: 10px auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.tips{
+    width:800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center, div {
+    margin: 15px;
+    
+    
+}
+
+.center{
+    display:flex;
+    justify-content:center;
+    align-content:center;
+}
+
+ul, ol{
+    display: inline-block;
+    width: auto;
+}
+
+li ul{
+    display: block;
+}
+
+
+
+.walkthrough{
+    margin: 30px;
+}
+
+.container{
+    margin-bottom: 20px;
+}
+
+.container p{
+    width: 90%;
+}
+
+.container img{
+  
+  margin-right: 5px;
+  margin-left: auto;
+  height: 200px;
+  max-width: 10%;
+}
+
+.checkbox {
+    height: 1rem;
+    width: 1rem;
+    border: 1px solid black;
+    border-radius: 20%;
+    /*background-color:  rgb(255, 255, 230);*/
+    cursor: pointer;
+    display: inline-block;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+.hidden{
+    display:none;
+}
+
+.featured{
+    display:flex;
+    width: 100%;
+    justify-content:space-around;
+
+}
+
+.myPicks, .desserts, .appetizers, .entrees{
+    display: inline-block;
+    border: 1px solid black;
+    width: 30%;
+    background: gray;
+    border-radius: 10%;
+    padding: 10px;
+ 
+    
+}
+

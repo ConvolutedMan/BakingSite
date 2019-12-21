@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    
+    <script src="../../Scripts/handlebars.min.js"></script>
+    <!--
+    <script id="recipeTemp" type="text/x-handlebars-template">
+        
+      {{#each recipeArray}}
+      <a href={{this.site}}><section class = "myPicks">
+      <p>  {{this.name}} </p>
+      </section>
+      </a>
+      {{/each}}
+    </script>
+-->
+
+    <script id="appetizerTemp" type="text/x-handlebars-template">
+        
+        {{#each appArray}}
+        <a href={{this.site}}><section class = "appetizers">
+        <p>  {{this.name}} </p>
+        </section>
+        </a>
+        {{/each}}
+      </script>
+
+      <script id="entreeTemp" type="text/x-handlebars-template">
+        
+        {{#each entreeArray}}
+        <a href={{this.site}}><section class = "entrees">
+        <p>  {{this.name}} </p>
+        </section>
+        </a>
+        {{/each}}
+      </script>
+
+      <script id="dessertTemp" type="text/x-handlebars-template">
+        
+        {{#each desArray}}
+        <a href={{this.site}}><section class = "desserts">
+        <p>  {{this.name}} </p>
+        </section>
+        </a>
+        {{/each}}
+      </script>
+
+    <link href="../../resources/css/syle.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <p>Davids Baking Dojo</p>
+        <div class="dropdown right-align">
+         <p class="button" >more recipes</p>
+         <div class="dropdownContent">
+           <a href="#">Desserts</a>
+           <a href="#">Appetizers</a>
+           <a href="#">Entrees</a>
+          </div>
+         </div>
+      </header>
+
+    <h1>recipes</h1>
+   
+ 
+<section id="total">
+
+</section>
+
+<h3>Appetizers</h3>
+<section id="appetizer">
+
+</section>
+
+<h3>Entrees</h3>
+
+<section id="entree">
+
+</section>
+
+<h3>Desserts</h3>
+
+<section id="dessert">
+
+</section>
+
+<script type="text/javascript" src="../../Scripts/list.js">  </script>
+</body>
